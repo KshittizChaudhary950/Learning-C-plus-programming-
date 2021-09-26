@@ -1,4 +1,6 @@
-#include<iostream>
+#include<iostream>// cout,cin, puts and null
+#include<stdlib.h> //(srand, rand)
+#include <time.h>
 using namespace std;
 int main()
 {
@@ -31,7 +33,57 @@ int main()
   	cout<<"The ASCII value of ["<<C<<"] is:"<<int(C)<<endl; 
   	*/
   	
+  	//--------------------------------------------------------------------------------//
+  	/*  C++ Program to Generate Random Numbers between 0 and 100  
+	  to generate random number you should add #include<stdlib.h> in the heading 
+	  */
   	
+	/*
+
+    int i;          //loop counter
+    int num;        //declaring the varibles that store random number
+
+    cout<<"Generating Random Numbers between 0 to 100:: \n";
+    for(i=1;i<=10;i++)
+    {
+        num=rand()%100; //get random number
+        cout<<" "<<num<<" ";
+    }
+
+    cout<<"\n";
+    */
+    
+    //-------------------------------------------------------------------//
+    // Simple progarm to guess the number
+    
+    int Guess, HiddenNumber;
+    /* initialize random seed: */
+  srand (time(0));
+
+  /* generate secret number between 1 and 10: */
+  HiddenNumber = rand() % 10 + 1;
+
+  do {
+    cout<<"Guess the number (1 to 10): \n";
+    cin>>Guess;
+    if (HiddenNumber<Guess)
+	{
+		cout<<"\nThe Hidden number is lower \n";
+	 } 
+ 
+    else if (HiddenNumber>Guess) 
+    {
+    cout<<"\nThe Hidden number is higher \n";
+	}
+	else if(HiddenNumber==Guess)
+	{
+		 cout<<"\nCongratulations!";
+	}
 	
+  }
+   while (HiddenNumber!=Guess);
+
+ 
+
 	return 0;
 }
