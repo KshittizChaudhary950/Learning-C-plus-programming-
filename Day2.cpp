@@ -55,12 +55,17 @@ int main()
     
     //-------------------------------------------------------------------//
     // Simple progarm to guess the number
+    // srand is use to create every time different sequence of number in the 
+    // runtime 
+    // rand create same sequence of number every time
     
+    //---------------------------------------------------------------------//
+    /*
     int Guess, HiddenNumber;
-    /* initialize random seed: */
-  srand (time(0));
+    //initialize random seed: 
+  srand (time(NULL));
 
-  /* generate secret number between 1 and 10: */
+  //generate secret number between 1 and 10: 
   HiddenNumber = rand() % 10 + 1;
 
   do {
@@ -82,6 +87,7 @@ int main()
 	
   }
    while (HiddenNumber!=Guess);
+   */
 
  
 
