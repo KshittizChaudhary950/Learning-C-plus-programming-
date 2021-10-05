@@ -51,17 +51,19 @@ int main()
 //program to print cube of a number using macros
 // macro is define in the header file #define 
 //------------------------------------------------------------------------------//
+/*
 #include <iostream>
 #include <math.h>
 #define cube(base) pow(base,3)
 using namespace std;
 int main()
 {
-	float num=2,cube;
-	cube=cube(num);
+	float num=2,Cube;
+	Cube=cube(num);
 	cout<<"The cube of: ["<<num<<"] is "<<cube<<endl;
 	
 	return 0;
 }
+*/
 
 //----------------------------------------------------------------------------------//
