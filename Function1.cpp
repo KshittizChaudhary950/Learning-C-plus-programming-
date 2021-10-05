@@ -41,16 +41,19 @@ void myfunction()
 */
 
 //program to add to number taking input from user.
+
+
 #include <iostream>
 using namespace std;
 int Add(int a,int b)
 { 
-
-	int sum=a+b;
-	return sum;
+	int sum;
+	return sum=a+b;
+	//return sum;
 }
 int main()
-{	int num1,num2;
+{
+	int num1,num2;
 	cout<<"Enter first number:\n";
 	cin>>num1;
 	cout<<"Enter second number:\n";
@@ -62,4 +65,5 @@ int main()
 	
 	return 0;
 }
+
 
